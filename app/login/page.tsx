@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label"
 import { toast } from "@/hooks/use-toast"
 
 export default function LoginPage() {
-  const [userType, setUserType] = useState('contributor')
+  const [userType] = useState('contributor')
   const router = useRouter()
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
